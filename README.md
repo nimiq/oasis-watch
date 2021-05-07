@@ -7,17 +7,20 @@ A front-end to the OASIS API to display contracts in a user-friendly way.
 Install the dependencies...
 
 ```bash
-cd svelte-app
+yarn
+# or
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+...then start the auto-reloading development server:
 
 ```bash
+yarn dev
+# or
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [localhost:5000](http://localhost:5000) to see the app running.
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
@@ -30,6 +33,8 @@ To create an optimised version of the app:
 ```bash
 npm run build
 ```
+
+This will build the app into the `public` folder, which can then be deployed.
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
