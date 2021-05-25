@@ -266,6 +266,10 @@
 		margin-bottom: 0;
 	}
 
+	main {
+		padding: 1rem;
+	}
+
 	.htlc-id {
 		margin-bottom: 3rem;
 	}
