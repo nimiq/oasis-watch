@@ -123,7 +123,7 @@
 				{#if htlc.status === 'settled'}
 				<aside>
 					<h3>
-						{htlc.settlement.type.toUpperCase()} Settlement
+						{htlc.settlement.type ? htlc.settlement.type.toUpperCase() : ''} Settlement
 						<sup class="{htlc.settlement.status}">{htlc.settlement.status.toUpperCase()}</sup>
 					</h3>
 					{#if htlc.settlement.status === 'denied'}
